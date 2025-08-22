@@ -8,8 +8,8 @@ const Dashboard: React.FC = () => {
       Welcome Back to Volab🎉
     </h2>
     <p className="text-gray-700">
-      Abadikan momen indah bersama pasangan, keluarga, dan teman-teman! Kini hadir aplikasi berbasis web 
-      dengan fitur foto untuk menyimpan setiap kenangan spesial Anda.
+      Capture beautiful moments with your partner, family, and friends! Now available as a web-based 
+      application with a photo feature to preserve every special memory.
     </p>
     <a
       href="/choose-frame"

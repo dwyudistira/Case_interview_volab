@@ -18,7 +18,6 @@ const CameraPortrait: React.FC = () => {
         STYLE SNAP
       </h1>
 
-      {/* Kamera / Hasil */}
       <div className="relative w-[360px] h-[640px] shadow-2xl rounded-2xl overflow-hidden border border-gray-700">
         {!image ? (
           <>
@@ -34,7 +33,7 @@ const CameraPortrait: React.FC = () => {
             />
             {/* Frame Overlay */}
             <img
-              src="/src/img/Frame-Portrait.png"
+              src="img/Frame-Portrait.png"
               alt="Frame"
               className="absolute inset-0 w-full h-full pointer-events-none"
             />
@@ -47,7 +46,7 @@ const CameraPortrait: React.FC = () => {
               className="absolute top-0 left-0 w-full h-full object-cover"
             />
             <img
-              src="/src/img/Frame-Portrait.png"
+              src="img/Frame-Portrait.png"
               alt="Frame"
               className="absolute inset-0 w-full h-full pointer-events-none"
             />
@@ -55,7 +54,6 @@ const CameraPortrait: React.FC = () => {
         )}
       </div>
 
-      {/* Tombol aksi */}
       <div className="flex gap-4 mt-6">
         {!image ? (
           <button

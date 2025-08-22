@@ -14,7 +14,7 @@ const CameraLandscape: React.FC = () => {
 
   return (
     <div className="min-h-screen grid grid-cols-2 gap-0">
-      {/* Left Section - Poster Style */}
+      {/* Left Section */}
       <div className="flex flex-col justify-center items-start px-16 w-full h-full 
                       bg-gradient-to-br from-purple-700 via-indigo-800 to-gray-900 text-white">
         <div>
@@ -59,8 +59,8 @@ const CameraLandscape: React.FC = () => {
           )}
         </div>
       </div>
-
-      {/* Right Section - Camera with gradient */}
+      
+      {/* Right Section */}
       <div className="relative flex items-center justify-center w-full h-full 
                       bg-gradient-to-b from-gray-900 via-black to-gray-900">
         {!image ? (
@@ -78,7 +78,7 @@ const CameraLandscape: React.FC = () => {
             />
             {/* Overlay Frame */}
             <img
-              src="/src/img/Frame-Landscape.png"
+              src="img/Frame-Landscape.png"
               alt="Frame Landscape"
               className="absolute inset-0 w-full h-full object-cover pointer-events-none"
             />
@@ -91,7 +91,7 @@ const CameraLandscape: React.FC = () => {
               className="w-full h-full object-cover opacity-90"
             />
             <img
-              src="/src/img/Frame-Landscape.png"
+              src="img/Frame-Landscape.png"
               alt="Frame Landscape"
               className="absolute inset-0 w-full h-full object-cover pointer-events-none"
             />

@@ -1,9 +1,8 @@
-import { Routes, Route, NavLink} from "react-router-dom";
-import Dashboard from "./pages/Dahboard";
-import Camera from "./pages/CameraLandscape";
+import { Routes, Route, NavLink } from "react-router-dom";
+import Dashboard from "./pages/Dashboard";
+import PhotoSession from "./pages/PhotoSession";
 import ChooseFrame from "./pages/ChooseFrame";
-import CameraLandscape from "./pages/CameraLandscape";
-import CameraPotrait from "./pages/CameraPotrait";
+import PreviewPage from "./pages/PreviewPage";
 
 function App() {
   const navLinkClass = ({ isActive }: { isActive: boolean }) =>
@@ -25,18 +24,15 @@ function App() {
           <NavLink to="/choose-frame" end className={navLinkClass}>
             Camera
           </NavLink>
-
         </div>
       </nav>
 
-      {/* Halaman */}
       <main>
         <Routes>
           <Route path="/" element={<Dashboard />} />
-          <Route path="/camera" element={<Camera />} />
           <Route path="/choose-frame" element={<ChooseFrame />} />
-          <Route path="/camera-landscape" element={<CameraLandscape />} />
-          <Route path="/camera-potrait" element={<CameraPotrait />} />
+          <Route path="/photo-session" element={<PhotoSession />} />
+          <Route path="/preview" element={<PreviewPage />} />
         </Routes>
       </main>
     </div>
